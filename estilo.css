@@ -90,3 +90,7 @@ a {
     font-family: 'Heebo', sans-serif;
     font-size: 200%;
 }
+
+a:hover {
+    color: black;
+}
