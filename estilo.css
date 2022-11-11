@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Heebo:wght@900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/subtle-curves');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)),
+                url(images/fondo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+    background-attachment: fixed;
+    /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+    background-size: cover;
+    background-color: #54544F;
+    text-align: center;
+}
+
+#contenido {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+    
+}
+
+div {
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 8px;
+    height: 92vh;
+    position: relative;
+    min-height: 450px;
+}
+
+p {
+    margin: 0;
+    padding: 1rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) ;
+    vertical-align: middle;
+    color: #ffff;
+    font-family: 'Belleza', sans-serif;
+    font-size: 120%;
+    line-height : 40px;
+}
+.info {
+    font-family: 'Subtle Curves', sans-serif;
+    font-size: 200%;
+}
+
+.nomada {
+    font-family: 'Subtle Curves', sans-serif;
+    font-size: 200%;
+    color: #E0F329;
+}
+
+.izquierda {
+    background: rgba(29, 0, 63, 0.4);
+    width: 45%;
+    margin: 2%;
+}
+
+.centro {
+    background: rgba(239, 255, 0, 0.4);
+    width: 30%;
+    margin: 2%;
+}
+
+.derecha {
+    background: rgba(187, 18, 27, 0.4);
+    width: 30%;
+    margin: 2%;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0;
+    padding: 1rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    vertical-align: middle;
+    color: #ffff;
+    font-family: 'Heebo', sans-serif;
+    font-size: 200%;
+}
