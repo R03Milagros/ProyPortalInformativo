@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilopostulante.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="/postulante.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <title>Portal Estudiantil</title>
 </head>
 <body>
     <header>
-            <h4><span class="info">INFO - </span> <span class="nomada">INGRESANTE</span>
+            <h4><span class="info">INFO - </span> <span class="nomada">POSTULANTE</span>
             <br>Portal estudiantil para el futuro informático antoniano</h4>
             <div>
                 <img src="images/insignia.png" align="right" height="100px">
@@ -17,13 +20,65 @@
             </div>
     </header>
     <div class="menu">
-        <nav>
-            <a href="#">NOSOTROS</a>
-            <a href="#">PLAN DE ESTUDIOS</a>
-            <a href="#">CROQUIS</a>
-            <a href="#">TEST VOCACIONAL</a>
-            <a href="#">CURRICULA</a>
-        </nav>
+        <p data-target="#tab1">NOSOTROS</p>
+        <p data-target="#tab2">PLAN DE ESTUDIOS</p>
+        <p data-target="#tab3">NOTICIAS</p>
+        <p data-target="#tab4">CROQUIS</p>
+        <p data-target="#tab5">TEST VOCACIONAL</p>
+        <p data-target="#tab6">CURRICULA</p>
+    </div>
+    <div class="secciones">
+        <div data-content id="tab1" class="active">
+            <h1>Nosotros</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea numquam odio voluptate. 
+                    Aliquam incidunt similique, et quasi ducimus quos aut autem non dignissimos dicta 
+                    sit provident, voluptatibus ut blanditiis perspiciatis cum, vel temporibus minima enim. 
+                    Asperiores omnis placeat officiis a tenetur sit recusandae, reprehenderit neque. 
+                    Tempora quibusdam, perferendis id ratione culpa dolorum! Nemo, animi? Eveniet eaque 
+                    perspiciatis, libero quia, pariatur iusto, ipsum porro quod, ut tempora cum quo non illum. 
+                    Non eligendi incidunt sequi, molestias quia perspiciatis architecto repudiandae quod.</p>
+        </div>
+        <div data-content id="tab2">
+            <h1>Plan de Estudios</h1>
+        </div>
+        <div data-content id="tab3">
+            <h1>Noticias</h1>
+            <div class="container h-100 position-relative">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active d-item">
+                        <img src="images/noticiaP1.jpg" class="d-block h-100 d-img" alt="">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/noticiaP2.jpg" class="d-block h-100" alt="">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div data-content id="tab4">
+            <h1>Croquis</h1>
+        </div>
+        <div data-content id="tab5">
+            <h1>Test Vocacional</h1>
+            <iframe src="https://forms.gle/JUbtgA5mhQMn2GSw8" width="700px" height="500px"></iframe>
+        </div>
+        <div data-content id="tab6">
+            <h1>Curricula</h1>
+            <embed src="archivos/curricula2018.pdf" type="application/pdf" width="700px" height="1000px"/>
+        </div>
     </div>
 </body>
 </html>
