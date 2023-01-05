@@ -94,3 +94,19 @@ a {
 a:hover {
     color: black;
 }
+
+.chatbot{
+    text-decoration: none;
+    min-width: 120px;
+    min-height: 50px;
+    border: 1px #000 solid;
+    border-radius: 10px;
+    font-size: 20px;
+    background: rgba(239, 255, 0, 0.4); 
+    position:absolute;
+    bottom: 50;
+    right: 50;
+    margin-left: 100px;
+    margin-top: 270px;
+    
+}
