@@ -1,0 +1,86 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "login",
+      "patterns": [
+        "How do I log in to the student portal?",
+        "How do I log in to the student portal?",
+        "login to the portal",
+        "where do I start session?",
+        "I want to start session?",
+        "what do I do to register?",
+        "How do I register?",
+        "how do i log in?"
+      ],
+      "responses": [
+        "You need a unique 6-digit student code to register on the Student Portal. If you don't know your code, you can get it from your school."
+      ]
+    },
+    {
+      "tag": "catalog",
+      "patterns": [
+        "When will the new course catalog be available?",
+        "Where can I see the course catalog?",
+        "course catalog",
+        "I want more information about the course catalog"
+      ],
+      "responses": [
+        "The Course Catalog is published in the computer center at the following address: http://ccomputo.unsaac.edu.pe/ in the student academic system part."
+      ]
+    },
+    {
+      "tag": "Test",
+      "patterns": [
+        "How to start my vocational test?",
+        "how to assess my career aptitude?",
+        "I want to evaluate my professional aptitude"
+      ],
+      "responses": [
+        "When looking for your first job or considering a career change, you need to take a career test to learn about career options that may match your skills, interests, and values. You can take your assessment at the following links: https://www.123test.com/career-test/https://www.careerexplorer.com/members/login/?next=/assessments/"
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    }
+  ]
+}
