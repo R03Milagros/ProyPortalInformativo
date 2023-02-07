@@ -9,6 +9,14 @@ from torch.utils.data import Dataset, DataLoader
 
 from nltk_utils import bag_of_words, tokenize, stem
 from model import NeuralNet
+
+import unicodedata
+
+def eliminar_tildes(cadena):
+    sin_tildes = ''.join((c for c in unicodedata.normalize('NFD', cadena)
+                         if unicodedata.category(c) != 'Mn'))
+    return sin_tildes
+
 # leemos nuestro archivo Json en modo de escritura 
 with open('intents.json', 'r') as f:
     intents = json.load(f)
@@ -30,12 +38,15 @@ for intent in intents['intents']:
         all_words.extend(w)
         # agregar al par xy
         xy.append((w, tag))
-
 # Signos de puntuacion
+
+
 ignore_words = ['?', '.', '!']
 # lematizamos y convertimos a minusculas  y eliminamos signos de 
 # puntuacion de cada palabra
-all_words = [stem(w) for w in all_words if w not in ignore_words]
+all_words = [stem(w)for w in all_words if w not in ignore_words]
+all_words = [eliminar_tildes(w) for w in all_words]
+print(all_words)
 # eliminar duplicados y ordenar
 all_words = sorted(set(all_words))
 tags = sorted(set(tags))

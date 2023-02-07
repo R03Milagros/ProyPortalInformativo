@@ -1,77 +1,77 @@
 {
   "intents": [
     {
-      "tag": "greeting",
+      "tag": "saludo",
       "patterns": [
-        "Hi",
-        "Hey",
-        "How are you",
-        "Is anyone there?",
-        "Hello",
-        "Good day"
+        "Hola",
+        "Como estas",
+        "Disculpe buenos dias",
+        "Hay alguien aqui",
+        "Hola",
+        "¿Cómo estás , o estan?"
       ],
       "responses": [
-        "Hey :-)",
-        "Hello, thanks for visiting",
-        "Hi there, what can I do for you?",
-        "Hi there, how can I help?"
+        "Hola :-)",
+        "Hola, gracias por visitarnos",
+        "Hola, que puedo hacer por ti?",
+        "Hola, como puedo ayudarte?"
       ]
     },
     {
-      "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye"],
+      "tag": "adios",
+      "patterns": ["Adios", "Hasta luego", "Adios"],
       "responses": [
-        "See you later, thanks for visiting",
-        "Have a nice day",
-        "Bye! Come back again soon."
+        "Hasta luego, gracias por visitarnos",
+        "Que tenga un lindo dia",
+        "¡Adiós! Vuelve pronto. "
       ]
     },
     {
-      "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+      "tag": "Gracias",
+      "patterns": ["Gracias", "Gracias a ti", "muchas gracias", "gracias por tu ayuda"],
+      "responses": ["No hay problema, si tienes otra consulta hazmelo saber", "Tienes otra consulta?", "Un placer"]
     },
     {
       "tag": "login",
       "patterns": [
-        "How do I log in to the student portal?",
-        "How do I log in to the student portal?",
-        "login to the portal",
-        "where do I start session?",
-        "I want to start session?",
-        "what do I do to register?",
-        "How do I register?",
-        "how do i log in?"
+        "Como inicio sesión en el portal de estudiantes?",
+        "Como inicio sesión en el portal de estudiantes?",
+        "iniciar sesión en el portal",
+        "¿dónde empiezo la sesion?",
+        "¿Quiero iniciar sesion?",
+        "¿Que hago para registrarme?",
+        "Como me registro?",
+        "Como me conecto?"
       ],
       "responses": [
-        "You need a unique 6-digit student code to register on the Student Portal. If you don't know your code, you can get it from your school."
+        "Necesita un codigo de estudiante unico de 6 digitos para registrarse en el Portal del estudiante. Si no sabe su codigo, puede obtenerlo de su escuela."
       ]
     },
     {
-      "tag": "catalog",
+      "tag": "catalogo",
       "patterns": [
-        "When will the new course catalog be available?",
-        "Where can I see the course catalog?",
-        "course catalog",
-        "I want more information about the course catalog"
+        "Cuando estará disponible el nuevo catalogo de cursos?",
+        "Donde puedo ver el catalogo de cursos?",
+        "catalogo de cursos",
+        "Quiero más informacion sobre el catalogo de cursos"
       ],
       "responses": [
-        "The Course Catalog is published in the computer center at the following address: http://ccomputo.unsaac.edu.pe/ in the student academic system part."
+        "El Catalogo de Cursos se encuentra publicado en el centro de computo en la siguiente dirección: http://ccomputo.unsaac.edu.pe/ en la parte del sistema académico del alumno."
       ]
     },
     {
       "tag": "Test",
       "patterns": [
-        "How to start my vocational test?",
-        "how to assess my career aptitude?",
-        "I want to evaluate my professional aptitude"
+        "¿Como comenzar mi prueba vocacional?",
+        "¿Como evaluar mi aptitud profesional?",
+        "Quiero evaluar mi aptitud profesional"
       ],
       "responses": [
-        "When looking for your first job or considering a career change, you need to take a career test to learn about career options that may match your skills, interests, and values. You can take your assessment at the following links: https://www.123test.com/career-test/https://www.careerexplorer.com/members/login/?next=/assessments/"
+        "Al buscar su primer trabajo o considerar un cambio de carrera, debe realizar una prueba de carrera para conocer las opciones de carrera que pueden coincidir con sus habilidades, intereses y valores. Puede realizar su evaluación en los siguientes enlaces: https://www.123test.com/career-test/https://www.careerexplorer.com/members/login/?next=/assessments/"
       ]
     },
     {
-      "tag": "funny",
+      "tag": "divertido",
       "patterns": [
         "Tell me a joke!",
         "Tell me something funny!",
@@ -82,5 +82,8 @@
         "What did the buffalo say when his son left for college? Bison."
       ]
     }
+
+
+
   ]
 }

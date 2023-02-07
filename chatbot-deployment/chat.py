@@ -1,6 +1,6 @@
 import random
 import json
-
+import unicodedata
 import torch
 
 from model import NeuralNet
@@ -27,6 +27,11 @@ model.eval()
 
 bot_name = "Sam"
 
+
+def eliminar_tildes(cadena):
+    sin_tildes = ''.join((c for c in unicodedata.normalize('NFD', cadena)
+                         if unicodedata.category(c) != 'Mn'))
+    return sin_tildes
 def get_response(msg):
     sentence = tokenize(msg)
     X = bag_of_words(sentence, all_words)
@@ -56,6 +61,12 @@ if __name__ == "__main__":
         if sentence == "quit":
             break
 
-        resp = get_response(sentence)
-        print(resp)
+        cadena = get_response(sentence)
+        print(cadena)
+        cadena_sin_tildes = eliminar_tildes(cadena)
+        print(cadena_sin_tildes)
+
+
+
+
 

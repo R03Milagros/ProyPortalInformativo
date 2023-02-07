@@ -3,8 +3,8 @@ import nltk
 # nltk.download('punkt')
 # importamos el steming o lematizados de Porter
 from nltk.stem.porter import PorterStemmer
+from nltk.stem import SnowballStemmer
 stemmer = PorterStemmer()
-
 
 def tokenize(sentence):
     """
@@ -12,7 +12,6 @@ def tokenize(sentence):
     un token puede ser una palabra o un carácter de puntuación, o un número
     """
     return nltk.word_tokenize(sentence)
-
 
 def stem(word):
     """
@@ -22,6 +21,7 @@ def stem(word):
     palabras = [raíz (w) para w en palabras]
     -> ["órgano", "órgano", "órgano"]
     """
+    stemmer = SnowballStemmer("spanish")
     return stemmer.stem(word.lower())
 
 
